@@ -31,5 +31,4 @@ public class Matricula {
         System.out.println("Estudiante: "+ estudiante.getNombre()+ " "+ estudiante.getApellido());
         System.out.println("Detalle: "+ detalle);
     }
-    /* Añadir info estudiante */
 }
