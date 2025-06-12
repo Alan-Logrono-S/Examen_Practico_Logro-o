@@ -30,7 +30,7 @@ public class Estudiante {
     public void mostrarDatos(){
         System.out.println("Nombre del Estudiante: "+ nombre+ " "+ apellido);
         System.out.println("Número de Cedula: "+cedula);
-        System.out.println("Edad: "+edad);
+        System.out.println("Edad: "+edad + " años.");
         System.out.println("Número de Telefono: "+telefono);
     }
     public boolean validarEdad(){

@@ -11,6 +11,6 @@ public class Evaluacion {
     public void setResultado(double resultado) {this.resultado = resultado;}
 
     public void mostrarresultado(){
-        System.out.println("Resultado: "+ resultado);
+        System.out.println("Resultado: "+ resultado + "/10");
     }
 }

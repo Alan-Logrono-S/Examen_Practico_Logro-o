@@ -23,31 +23,18 @@ public class Curso {
     public void setDuracion(double duracion) {this.duracion = duracion;}
     public void setPrecio(double precio) {this.precio = precio;}
 
-    /*public double calcular(){return (double calcular() ? "Si" : "No");}*/
-
     public double calcular_precio(){
-        return precio * (precio * 0.25);
+        return precio + (precio * 0.25);
     }
-
     public void mostrarResumen(){
         System.out.println("Nombre del Curso: "+ curso);
-        System.out.println("Duración: "+ duracion);
+        System.out.println("Duración: "+ duracion + " días.");
         System.out.println("Docente encargado: "+docente.getNombre());
-        System.out.println("Precio Base:" +precio);
+        System.out.println("Precio Base: $" +precio);
 
     }
     public Docente asignarDocente(String docente){
         System.out.println("Docente: "+docente);
         return (getDocente());
     }
-
 }
-/*public double calcular(){
-    return (double calcular() ? "Si" : "No");
-}
-
-public void mostrarDatos(){
-
-}
-
-public double validarEdad(){} */

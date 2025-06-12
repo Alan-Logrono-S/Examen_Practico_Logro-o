@@ -24,7 +24,7 @@ public class Main {
         System.out.println(" ");
         Estudiante estudiante2 = new Estudiante("Mike","Crosoft","0928342543",23,"0987123454");
         Docente docente2 = new Docente("Maria","Economista","0928734124","Economia");
-        CursoCertificado cursoCertificado2 = new CursoCertificado(docente2, "Economia",25,20,"Alta",true);
+        CursoCertificado cursoCertificado2 = new CursoCertificado(docente2, "Economia",30,20,"Alta",true);
         Evaluacion evaluacion2 = new Evaluacion(8);
         Matricula matricula2= new Matricula(estudiante2,evaluacion2,"Ninguno",2032);
 

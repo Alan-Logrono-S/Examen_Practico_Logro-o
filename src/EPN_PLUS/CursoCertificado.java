@@ -16,6 +16,6 @@ public class CursoCertificado extends CursoRegular{
     public void mostrarResumen() {
         super.mostrarResumen();
         System.out.println("Certificado: "+ (certificado));
-        System.out.println("Precio Final: "+ calcular_precio());
+        System.out.println("Precio Final: $"+ calcular_precio());
     }
 }
