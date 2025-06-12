@@ -1,9 +1,11 @@
 package Principal;
-
+import java.util.Scanner;
 import EPN_PLUS.*;
 
 public class Main {
     public static void main (String[] args){
+        Scanner sc = new Scanner(System.in);
+
         Estudiante estudiante1 = new Estudiante("Pepe","Rito","098765432",20,"098712123");
         Docente docente1= new Docente("Ricardo","Ingeniero en Sistemas","0987645123","Programación");
         CursoRegular cursoRegular1= new CursoRegular(docente1,"Programación",25,20,"Media");
@@ -37,5 +39,24 @@ public class Main {
         docente2.mostrarPerfil();
         System.out.println("----------- DATOS CURSO-----------");
         cursoCertificado2.mostrarResumen();
+        System.out.println(" ");
+        System.out.println("##########################################");
+        System.out.println(" ");
+        Estudiante estudiante3 = new Estudiante(" "," ","", 20,"");
+        System.out.println("----------- DATOS ESTUDIANTE -----------");
+        System.out.print("Nombre: ");
+        estudiante3.setNombre(sc.nextLine());
+        System.out.print("Apellido: ");
+        estudiante3.setApellido(sc.nextLine());
+        System.out.print("Cedula: ");
+        estudiante3.setCedula(sc.nextLine());
+        System.out.print("Edad: ");
+        estudiante3.setEdad(sc.nextInt());
+        System.out.print("Telefono: ");
+        estudiante3.setTelefono(sc.nextLine());
+        sc.close();
+
+
+
     }
 }
